@@ -28,7 +28,7 @@ export const dictionary = {
           'Desenvolvi e mantive uma plataforma SaaS de grande escala para uma cooperativa de crédito nacional (Unicred). Adquiri expertise em PHP, JavaScript, PostgreSQL e, posteriormente, em frameworks modernos como Vue.js e React.js.',
       },
       {
-        date: '2022 (Freelance)',
+        date: '2024 (Freelance)',
         title: 'Projeto Full-Stack Freelance',
         description:
           'Co-desenvolvi um site dinâmico (Next.js) e painel de gerenciamento (React.js, Laravel) para uma empresa de avaliação de imóveis, tornando-me eventualmente o único desenvolvedor para suporte.',
