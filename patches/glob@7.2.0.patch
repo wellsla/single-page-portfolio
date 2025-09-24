@@ -1,0 +1,9 @@
+diff --git a/node_modules/glob/glob.js b/node_modules/glob/glob.js
+index 32549e3..1215264 100644
+--- a/node_modules/glob/glob.js
++++ b/node_modules/glob/glob.js
+@@ -1,3 +1,4 @@
++
+ // A library for programmatic glob matching.
+ 
+ // The main trick to glob matching is that * and ? matched within a path

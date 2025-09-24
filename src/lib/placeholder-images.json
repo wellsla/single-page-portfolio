@@ -1,0 +1,46 @@
+{
+  "placeholderImages": [
+    {
+      "id": "unicred-invest",
+      "description": "A financial dashboard showing graphs and charts.",
+      "imageUrl": "/img/UnicredInvest.jpg",
+      "imageHint": "finance dashboard"
+    },
+    {
+      "id": "customer-service-manager",
+      "description": "A screen displaying a queue management system for customer service.",
+      "imageUrl": "/img/GestorAtend.jpg",
+      "imageHint": "queue management"
+    },
+    {
+      "id": "solusjur",
+      "description": "An interface for managing legal documents and processes.",
+      "imageUrl": "/img/SolusJur.jpg",
+      "imageHint": "legal document"
+    },
+    {
+      "id": "real-estate-website",
+      "description": "A modern architectural building, representing a real estate website.",
+      "imageUrl": "/img/ConfiancaAval.jpg",
+      "imageHint": "modern architecture"
+    },
+    {
+      "id": "rpg-sheet-creator",
+      "description": "A fantasy game scene, representing a tabletop RPG character sheet creator.",
+      "imageUrl": "/img/TableSheet.jpg",
+      "imageHint": "fantasy game"
+    },
+    {
+      "id": "ml-expense-prediction",
+      "description": "A complex data chart, representing a machine learning prediction model.",
+      "imageUrl": "/img/MLForecast.jpeg",
+      "imageHint": "data chart"
+    },
+    {
+      "id": "profile-picture",
+      "description": "A placeholder for a profile picture.",
+      "imageUrl": "/img/Eu.jpg",
+      "imageHint": "man portrait"
+    }
+  ]
+}
