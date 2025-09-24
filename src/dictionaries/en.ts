@@ -88,7 +88,7 @@ export const dictionary = {
         title: 'Real Estate Appraisal Website',
         description:
           'A freelance project to create a dynamic website for a real estate appraisal company. It featured a Next.js frontend and a Laravel backend with a React management panel for content.',
-        technologies: ['Next.js', 'React', 'Laravel', 'MySQL'],
+        technologies: ['Next.js', 'React', 'Laravel', 'PostgreSQL'],
       },
       {
         id: 'rpg-sheet-creator',

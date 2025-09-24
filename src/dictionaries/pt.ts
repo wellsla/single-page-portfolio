@@ -87,7 +87,7 @@ export const dictionary = {
         title: 'Site de Avaliação de Imóveis',
         description:
           'Um projeto freelance para criar um site dinâmico para uma empresa de avaliação de imóveis. Contava com um frontend em Next.js e um backend em Laravel com um painel de gerenciamento em React para o conteúdo.',
-        technologies: ['Next.js', 'React', 'Laravel', 'MySQL'],
+        technologies: ['Next.js', 'React', 'Laravel', 'PostgreSQL'],
       },
       {
         id: 'rpg-sheet-creator',
