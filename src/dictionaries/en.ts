@@ -6,7 +6,7 @@ export const dictionary = {
   },
   hero: {
     name: 'Welliton Slaviero',
-    title: 'Frontend Developer',
+    title: 'Web Developer',
     subtitle:
       'Crafting elegant and efficient web experiences. Passionate about technology and clean code.',
     cta: 'View My Work',

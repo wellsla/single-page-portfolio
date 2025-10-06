@@ -3,7 +3,7 @@ import '../globals.css';
 import { ThemeProvider } from '@/components/theme-provider';
 
 export const metadata: Metadata = {
-  title: 'Welliton Slaviero | Frontend Developer Portfolio',
+  title: 'Welliton Slaviero | Web Developer Portfolio',
   description: 'A personal professional portfolio showcasing projects and skills in web development.',
 };
 
