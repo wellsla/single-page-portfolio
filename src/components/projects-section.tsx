@@ -8,7 +8,7 @@ import { Badge } from '@/components/ui/badge';
 import { Button } from '@/components/ui/button';
 import { Tooltip, TooltipContent, TooltipProvider, TooltipTrigger } from '@/components/ui/tooltip';
 import { ExternalLink, Lock } from 'lucide-react';
-import placeholderData from '@/lib/placeholder-images.json';
+import currentData from '@/lib/images.json';
 import { motion } from 'framer-motion';
 
 type ImagePlaceholder = {
@@ -18,7 +18,7 @@ type ImagePlaceholder = {
   imageHint: string;
 };
 
-const allPlaceholders: ImagePlaceholder[] = placeholderData.placeholderImages;
+const allPlaceholders: ImagePlaceholder[] = currentData.placeholderImages;
 
 // Project links mapping
 const projectLinks: Record<string, { url?: string; isPrivate: boolean }> = {

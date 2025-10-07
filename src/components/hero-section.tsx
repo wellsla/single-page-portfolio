@@ -5,7 +5,7 @@ import type { Dictionary } from '@/lib/get-dictionary';
 import { Button } from '@/components/ui/button';
 import Link from 'next/link';
 import Image from 'next/image';
-import placeholderData from '@/lib/placeholder-images.json';
+import currentData from '@/lib/images.json';
 import { motion } from 'framer-motion';
 
 type HeroSectionProps = {
@@ -13,7 +13,7 @@ type HeroSectionProps = {
 };
 
 export function HeroSection({ dictionary }: HeroSectionProps) {
-  const profileImage = placeholderData.placeholderImages.find((p) => p.id === 'profile-picture');
+  const profileImage = currentData.placeholderImages.find((p) => p.id === 'profile-picture');
 
   const containerVariants = {
     hidden: { opacity: 0 },
