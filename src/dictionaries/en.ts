@@ -66,7 +66,7 @@ export const dictionary = {
         id: 'unicred-invest',
         title: 'Unicred Invest',
         description:
-          'Designed and developed a vital investment management tool that helped Unicred employees advise clients, saving millions of reais. This project involved complex business logic, external API integrations, and a strong focus on UI/UX to handle vast amounts of data.',
+          'Designed and developed a vital investment management tool that helped Unicred employees advise clients, saving hundreds of thousands of dollars. This project involved complex business logic, external API integrations, and a strong focus on UI/UX to handle vast amounts of data.',
         technologies: ['PHP', 'JavaScript', 'jQuery', 'PostgreSQL', 'UI/UX Design'],
       },
       {
