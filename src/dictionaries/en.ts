@@ -6,57 +6,45 @@ export const dictionary = {
   },
   hero: {
     name: 'Welliton Slaviero',
-    title: 'Web Developer',
+    title: 'Fullstack Developer',
     subtitle:
-      'Crafting elegant and efficient web experiences. Passionate about technology and clean code.',
-    cta: 'View My Work',
+      'I build intuitive, scalable, and high-performance web applications. Design Systems, clean code, and user-centric experiences that drive business growth.',
+    cta: 'View Projects',
   },
   about: {
     title: 'About Me',
     description:
-      "I'm a Computer Science graduate passionate about turning ideas into reality through code. My journey began with robotics in school and has since evolved into a career in software development, with a strong focus on frontend technologies. I thrive on challenges and am dedicated to continuous learning and building high-quality, impactful applications.",
+      "I'm a Fullstack Developer with 5+ years of experience turning complex problems into intuitive, efficient, and accessible web experiences. My core stack is Vue 3 (Composition API) with TypeScript, along with React and Next.js. I have hands-on experience building Design Systems with Storybook and enterprise UI using Vuetify and PrimeVue. A solid background with Laravel (PHP) and PostgreSQL helps me collaborate across frontend, backend, and DevOps to ship features end-to-end. I care about clean code, performance, accessibility, and products that help people and companies grow.",
     timeline: [
       {
-        date: '2025',
-        title: 'Graduation & Final Project',
+        date: '2024–2025',
+        title: 'Frontend/Fullstack in Product Teams',
         description:
-          'Graduated in Computer Science with a 9/10 grade on my final project: a machine learning algorithm in Python to predict company expenses.',
+          'Legacy SaaS refactor to Vue 3. Design System foundations with Storybook. Enterprise UI with Vuetify and PrimeVue. Real-time features with WebSockets.',
       },
       {
-        date: '2020 - 2025',
-        title: 'Software Developer at Soluct Soluções em Sistemas',
+        date: '2020–2024',
+        title: 'Fullstack Developer in SaaS at Scale',
         description:
-          'Developed and maintained a large-scale SaaS platform for a national credit union (Unicred). Gained expertise in PHP, JavaScript, PostgreSQL, and later, modern frameworks like Vue.js and React.js.',
+          'High-impact modules such as CRMs, dashboards, and collections. Investment tool in PHP and PostgreSQL with complex rules and reliable data workflows.',
       },
       {
         date: '2024 (Freelance)',
-        title: 'Freelance Full-Stack Project',
+        title: 'Full-Stack Delivery',
         description:
-          'Co-developed a dynamic website (Next.js) and management panel (React.js, Laravel) for a real estate appraisal company, eventually becoming the sole developer for support.',
+          'Website and admin with Next.js, React, Laravel, and PostgreSQL. End-to-end delivery and solo maintenance.',
       },
       {
-        date: '2019',
-        title: 'Logistics Assistant at Post Office',
+        date: '2025',
+        title: 'Graduation and Final Project',
         description:
-          'Worked for a year at the Brazilian Post Office after passing a public competition. Recognized for organizational skills and business sense.',
-      },
-      {
-        date: 'High School',
-        title: 'University Prep & Robotics',
-        description:
-          'Participated in preparatory courses for Computer Science, learning Arduino, Raspberry Pi, and programming in C/C++/C#. Continued with robotics, competing in regional championships.',
-      },
-      {
-        date: 'Middle School',
-        title: 'First Steps in Programming',
-        description:
-          'Started my programming journey in a school robotics group, learning logic with "Scratch" and building a foundation for my future career.',
+          'Computer Science degree. ML forecasting project in Python scored 9/10.',
       },
     ],
   },
   projects: {
     title: 'My Projects',
-    description: "Here are some of the key projects I've worked on, showcasing my skills and experience.",
+    description: 'Selected projects that showcase architecture, componentization, UI/UX, and end-to-end delivery.',
     tooltips: {
       viewProject: 'View Project',
       privateProject: 'Private Project',
@@ -66,42 +54,42 @@ export const dictionary = {
         id: 'unicred-invest',
         title: 'Unicred Invest',
         description:
-          'Designed and developed a vital investment management tool that helped Unicred employees advise clients, saving hundreds of thousands of dollars. This project involved complex business logic, external API integrations, and a strong focus on UI/UX to handle vast amounts of data.',
-        technologies: ['PHP', 'JavaScript', 'jQuery', 'PostgreSQL', 'UI/UX Design'],
+          'Investment analysis tool for credit-union advisors to manage high-value portfolios with complex business rules. Implemented precise calculations, reliable data workflows, and clear dashboards for large datasets.',
+        technologies: ['PHP', 'JavaScript', 'jQuery', 'PostgreSQL', 'Data Visualization'],
       },
       {
         id: 'customer-service-manager',
         title: 'Customer Service Manager',
         description:
-          'Refactored a legacy system for managing service queues in physical branches. Developed a new React Native app for TVs to display and call service tickets, utilizing WebSockets for real-time communication. The system is indispensable for most Unicred branches in Brazil.',
+          'Real-time queue display and calling system for physical branches. New React Native TV app powered by WebSockets with resilient reconnection logic and simple UX for attendants and customers.',
         technologies: ['React Native', 'WebSockets', 'Context API', 'Android'],
       },
       {
         id: 'solusjur',
-        title: 'SolusJur - Legal Process Manager',
+        title: 'SolusJur — Legal Process Manager',
         description:
-          'Independently developed a web application for managing legal processes for defaulting co-op members. Built with a modern stack, this external system communicates with the main SaaS platform and is used by affiliated law firms.',
-        technologies: ['React', 'Tailwind CSS', 'API Integration'],
+          'External web app to manage legal processes and delinquent accounts, integrating with the main SaaS. Reusable components and UI consistency guided by Storybook. Enterprise UI with Vuetify and PrimeVue.',
+        technologies: ['Vue.js', 'Vuetify', 'PrimeVue', 'REST APIs', 'Tailwind CSS'],
       },
       {
         id: 'real-estate-website',
         title: 'Real Estate Appraisal Website',
         description:
-          'A freelance project to create a dynamic website for a real estate appraisal company. It featured a Next.js frontend and a Laravel backend with a React management panel for content.',
+          'Full-stack delivery for a real estate appraisal company. Dynamic Next.js website and React admin panel backed by a Laravel API and PostgreSQL. Clean architecture, responsive UI, and SEO-friendly pages.',
         technologies: ['Next.js', 'React', 'Laravel', 'PostgreSQL'],
       },
       {
         id: 'rpg-sheet-creator',
         title: 'RPG Character Sheet Creator',
         description:
-          'A personal project for a Software Engineering course involving the complete planning and execution of a system. This fun app allows users to create character sheets for Tabletop RPGs.',
+          'Academic and personal project with complete planning and execution. Engaging UX using Next.js and Laravel to create structured tabletop RPG character sheets.',
         technologies: ['Next.js', 'Laravel', 'Software Engineering'],
       },
       {
         id: 'ml-expense-prediction',
         title: 'ML Expense Prediction Model',
         description:
-          'My final university project, which received a 9/10 grade. I developed and analyzed a machine learning algorithm using Python to predict expenses and profit-sharing for small companies.',
+          'University capstone project (grade 9/10). Python model to forecast expenses and profit sharing for small companies. Clear methodology and results presentation.',
         technologies: ['Python', 'Machine Learning', 'Data Analysis'],
       },
     ],
@@ -109,7 +97,7 @@ export const dictionary = {
   contact: {
     title: 'Get in Touch',
     description:
-      "Have a question, a proposal, or just want to say hi? Feel free to reach out through any of the channels below. I'll get back to you as soon as I can.",
+      "Let's build something impactful together. Open to collaboration, remote opportunities, and meaningful challenges.",
     connect: 'Connect with me on:',
   },
   footer: {

@@ -6,56 +6,44 @@ export const dictionary = {
   },
   hero: {
     name: 'Welliton Slaviero',
-    title: 'Desenvolvedor da Web',
-    subtitle: 'Criando experiências web elegantes e eficientes. Apaixonado por tecnologia e código limpo.',
-    cta: 'Veja Meu Trabalho',
+    title: 'Desenvolvedor Fullstack',
+    subtitle: 'Crio aplicações web intuitivas, escaláveis e performáticas. Design Systems, código limpo e experiências centradas no usuário que geram crescimento real.',
+    cta: 'Ver Projetos',
   },
   about: {
     title: 'Sobre Mim',
     description:
-      'Sou um graduado em Ciência da Computação apaixonado por transformar ideias em realidade através do código. Minha jornada começou com robótica na escola e desde então evoluiu para uma carreira em desenvolvimento de software, com forte foco em tecnologias frontend. Eu prospero em desafios e sou dedicado ao aprendizado contínuo e à construção de aplicações de alta qualidade e impacto.',
+      'Sou Desenvolvedor Fullstack com mais de 5 anos transformando problemas complexos em experiências web intuitivas, eficientes e acessíveis. Meu foco é Vue 3 (Composition API) com TypeScript, além de React e Next.js. Tenho experiência prática na construção de Design Systems com Storybook e em UI corporativa usando Vuetify e PrimeVue. Minha base com Laravel (PHP) e PostgreSQL me permite colaborar com frontend, backend e DevOps para entregar ponta a ponta. Prezo por código limpo, performance, acessibilidade e por produtos que ajudem pessoas e empresas a crescerem.',
     timeline: [
       {
-        date: '2025',
-        title: 'Formatura e Projeto Final',
+        date: '2024–2025',
+        title: 'Frontend/Fullstack em Times de Produto',
         description:
-          'Formado em Ciência da Computação com nota 9/10 no meu projeto final: um algoritmo de machine learning em Python para prever despesas de empresas.',
+          'Refatoração de SaaS legado para Vue 3. Fundações de Design System com Storybook. UI corporativa com Vuetify e PrimeVue. Recursos em tempo real com WebSockets.',
       },
       {
-        date: '2020 - 2025',
-        title: 'Desenvolvedor de Software na Soluct Soluções em Sistemas',
+        date: '2020–2024',
+        title: 'Desenvolvedor Fullstack em SaaS em Escala',
         description:
-          'Desenvolvi e mantive uma plataforma SaaS de grande escala para uma cooperativa de crédito nacional (Unicred). Adquiri expertise em PHP, JavaScript, PostgreSQL e, posteriormente, em frameworks modernos como Vue.js e React.js.',
+          'Módulos de alto impacto como CRMs, dashboards e cobrança. Ferramenta de investimentos em PHP e PostgreSQL com regras complexas e fluxos de dados confiáveis.',
       },
       {
         date: '2024 (Freelance)',
-        title: 'Projeto Full-Stack Freelance',
+        title: 'Entrega Full-Stack',
         description:
-          'Co-desenvolvi um site dinâmico (Next.js) e painel de gerenciamento (React.js, Laravel) para uma empresa de avaliação de imóveis, tornando-me eventualmente o único desenvolvedor para suporte.',
+          'Website e admin com Next.js, React, Laravel e PostgreSQL. Entrega ponta a ponta e manutenção solo.',
       },
       {
-        date: '2019',
-        title: 'Assistente de Logística nos Correios',
+        date: '2025',
+        title: 'Graduação e TCC',
         description:
-          'Trabalhei por um ano nos Correios após passar em um concurso público. Fui reconhecido por minhas habilidades de organização e senso de negócio.',
-      },
-      {
-        date: 'Ensino Médio',
-        title: 'Pré-universitário e Robótica',
-        description:
-          'Participei de cursos preparatórios para Ciência da Computação, aprendendo Arduino, Raspberry Pi e programação em C/C++/C#. Continuei com a robótica, competindo em campeonatos regionais.',
-      },
-      {
-        date: 'Ensino Fundamental',
-        title: 'Primeiros Passos na Programação',
-        description:
-          'Iniciei minha jornada na programação em um grupo de robótica escolar, aprendendo lógica com "Scratch" e construindo a base para minha futura carreira.',
+          'Bacharelado em Ciência da Computação. Projeto de previsão em Python com nota 9/10.',
       },
     ],
   },
   projects: {
     title: 'Meus Projetos',
-    description: 'Aqui estão alguns dos principais projetos em que trabalhei, mostrando minhas habilidades e experiência.',
+    description: 'Projetos selecionados que destacam arquitetura, componentização, UI/UX e entregas ponta a ponta.',
     tooltips: {
       viewProject: 'Ver Projeto',
       privateProject: 'Projeto Privado',
@@ -65,42 +53,42 @@ export const dictionary = {
         id: 'unicred-invest',
         title: 'Unicred Invest',
         description:
-          'Projetei e desenvolvi uma ferramenta vital de gestão de investimentos que ajudou os funcionários da Unicred a assessorar clientes, economizando milhões de reais. O projeto envolveu lógica de negócios complexa, integrações de API externas e um forte foco em UI/UX para lidar com grandes volumes de dados.',
-        technologies: ['PHP', 'JavaScript', 'jQuery', 'PostgreSQL', 'UI/UX Design'],
+          'Ferramenta de análise de investimentos para assessores de cooperativas, com regras de negócio complexas. Cálculos precisos, fluxos de dados confiáveis e dashboards claros para grandes volumes.',
+        technologies: ['PHP', 'JavaScript', 'jQuery', 'PostgreSQL', 'Visualização de Dados'],
       },
       {
         id: 'customer-service-manager',
-        title: 'Gerenciador de Atendimento ao Cliente',
+        title: 'Gerenciador de Atendimento',
         description:
-          'Refatorei um sistema legado para gerenciar filas de atendimento em agências físicas. Desenvolvi um novo aplicativo em React Native para TVs para exibir e chamar senhas, utilizando WebSockets para comunicação em tempo real. O sistema é indispensável para a maioria das agências Unicred no Brasil.',
+          'Sistema em tempo real para exibição e chamada de senhas em agências físicas. Novo app para TV em React Native com WebSockets, reconexão robusta e UX simples para atendentes e clientes.',
         technologies: ['React Native', 'WebSockets', 'Context API', 'Android'],
       },
       {
         id: 'solusjur',
-        title: 'SolusJur - Gerenciador de Processos Jurídicos',
+        title: 'SolusJur — Gestor de Processos',
         description:
-          'Desenvolvi de forma independente uma aplicação web para gerenciar processos jurídicos de cooperados inadimplentes. Construído com uma stack moderna, este sistema externo se comunica com a plataforma SaaS principal e é usado por escritórios de advocacia afiliados.',
-        technologies: ['React', 'Tailwind CSS', 'Integração de API'],
+          'Aplicação externa para gerenciar processos jurídicos e inadimplência, integrando com o SaaS principal. Componentes reutilizáveis e consistência de UI guiadas por Storybook. UI corporativa com Vuetify e PrimeVue.',
+        technologies: ['Vue.js', 'Vuetify', 'PrimeVue', 'APIs REST', 'Tailwind CSS'],
       },
       {
         id: 'real-estate-website',
-        title: 'Site de Avaliação de Imóveis',
+        title: 'Site de Avaliação Imobiliária',
         description:
-          'Um projeto freelance para criar um site dinâmico para uma empresa de avaliação de imóveis. Contava com um frontend em Next.js e um backend em Laravel com um painel de gerenciamento em React para o conteúdo.',
+          'Entrega full-stack para uma empresa de avaliação imobiliária. Site dinâmico em Next.js e painel administrativo em React, com API Laravel e PostgreSQL. Arquitetura limpa, UI responsiva e páginas otimizadas para SEO.',
         technologies: ['Next.js', 'React', 'Laravel', 'PostgreSQL'],
       },
       {
         id: 'rpg-sheet-creator',
-        title: 'Criador de Fichas de RPG',
+        title: 'Gerador de Fichas de RPG',
         description:
-          'Um projeto pessoal para uma disciplina de Engenharia de Software envolvendo o planejamento e execução completos de um sistema. Este aplicativo divertido permite que os usuários criem fichas de personagem para RPGs de mesa.',
+          'Projeto acadêmico e pessoal com planejamento completo e execução. UX envolvente usando Next.js e Laravel para criar fichas estruturadas de RPG de mesa.',
         technologies: ['Next.js', 'Laravel', 'Engenharia de Software'],
       },
       {
         id: 'ml-expense-prediction',
-        title: 'Modelo de Previsão de Despesas com ML',
+        title: 'Previsão de Despesas (ML)',
         description:
-          'Meu projeto final de graduação, que recebeu nota 9/10. Desenvolvi e analisei um algoritmo de machine learning usando Python para prever despesas e participação nos lucros para pequenas empresas.',
+          'Trabalho de conclusão de curso com nota 9/10. Modelo em Python para prever despesas e distribuição de resultados em pequenas empresas. Metodologia clara e apresentação de resultados.',
         technologies: ['Python', 'Machine Learning', 'Análise de Dados'],
       },
     ],
@@ -108,7 +96,7 @@ export const dictionary = {
   contact: {
     title: 'Entre em Contato',
     description:
-      'Tem alguma pergunta, uma proposta, ou apenas quer dizer oi? Sinta-se à vontade para entrar em contato através de qualquer um dos canais abaixo. Responderei assim que possível.',
+      'Vamos construir algo de impacto juntos. Aberto a colaboração, oportunidades remotas e desafios significativos.',
     connect: 'Conecte-se comigo em:',
   },
   footer: {

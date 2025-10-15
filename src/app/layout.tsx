@@ -2,8 +2,8 @@ import type { Metadata } from 'next';
 import './globals.css';
 
 export const metadata: Metadata = {
-  title: 'Welliton Slaviero | Web Developer Portfolio',
-  description: 'A personal professional portfolio showcasing projects and skills in web development.',
+  title: 'Welliton Slaviero | Fullstack Developer (Vue.js, React.js, Next.js, TypeScript, Laravel, PostgreSQL)',
+  description: 'Fullstack Developer specialized in Vue.js, React, Next.js, and TypeScript. Experienced with Design Systems (Storybook), Vuetify/PrimeVue, Laravel/PHP, PostgreSQL, and real-time apps with WebSockets. Focused on performance, clean code, and business impact.',
 };
 
 export default function RootLayout({
