@@ -1,41 +1,79 @@
-# Code Canvas - Personal Portfolio
+# Welliton Slaviero — Portfolio
 
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app), designed to serve as a personal and professional portfolio for Welliton Slaviero.
+Personal portfolio of **Welliton Slaviero, Full Stack Software Engineer** (TypeScript · Vue 3 · React · Laravel · AI-augmented development).
 
-The portfolio showcases professional background, skills, and a collection of key projects, all presented with a clean, modern design and subtle animations. It is fully responsive and supports internationalization for both English and Portuguese.
+**Live:** https://welliton-slaviero.vercel.app · **LinkedIn:** https://www.linkedin.com/in/welliton-slaviero/ · **GitHub:** https://github.com/wellsla
 
-## Getting Started
+Single-page site with hero, about + career timeline, project case studies and contact, available in English (`/en`, default) and Portuguese (`/pt`), with light/dark theme.
 
-First, install the dependencies:
+## Tech stack
+
+| Area | Tools |
+|---|---|
+| Framework | Next.js 15 (App Router, React Server Components) · React 18 · TypeScript |
+| UI | Tailwind CSS · shadcn/ui (Radix UI primitives) · lucide-react icons · Framer Motion |
+| Theming | next-themes (system / light / dark) |
+| i18n | Dynamic `[lang]` route + typed dictionaries loaded on the server |
+| Quality | ESLint (`eslint-config-next`) · Prettier · `tsc --noEmit` |
+| Hosting | Vercel |
+
+## How it works
+
+- **Routing:** `/` redirects to `/en`; `src/app/[lang]/page.tsx` loads the dictionary for the requested locale and renders every section.
+- **Content as data:** all copy lives in `src/dictionaries/en.ts` and `src/dictionaries/pt.ts`. The `Dictionary` type is inferred from them (`src/lib/get-dictionary.ts`), so both files must keep the same shape. TypeScript flags any mismatch.
+- **Sections:** each section is a component in `src/components/*-section.tsx` that receives only its slice of the dictionary.
+- **Project media and links:**
+  - Screenshots are mapped by project `id` in `src/lib/images.json` (files in `public/img/`). Projects without a screenshot get an icon cover instead.
+  - External links and "private project" flags are mapped by `id` in `projectLinks` inside `src/components/projects-section.tsx`.
+
+## Project structure
+
+```
+src/
+├── app/
+│   ├── layout.tsx          # Root HTML, fonts, SEO metadata
+│   ├── page.tsx            # Redirects / → /en
+│   └── [lang]/
+│       ├── layout.tsx      # Theme provider
+│       └── page.tsx        # Page composition per locale
+├── components/             # Header, sections, footer, theme toggle
+│   └── ui/                 # shadcn/ui components
+├── dictionaries/           # en.ts / pt.ts — all site content
+└── lib/                    # get-dictionary, images.json, utils
+```
+
+## Getting started
+
+Requirements: Node.js 20+ and npm.
 
 ```bash
 npm install
-```
-
-Then, run the development server:
-
-```bash
 npm run dev
 ```
 
-Open [http://localhost:9002](http://localhost:9002) with your browser to see the result.
+Open http://localhost:9002.
 
-## Available Scripts
+## Scripts
 
-In the project directory, you can run:
+| Command | Description |
+|---|---|
+| `npm run dev` | Development server on port 9002 |
+| `npm run build` | Production build (`NODE_ENV=production`, POSIX shell syntax: use Git Bash/WSL on Windows or run `npx next build`) |
+| `npm run start` | Serves the production build |
+| `npm run lint` | ESLint |
+| `npm run typecheck` | TypeScript type check |
+| `npm run format` | Prettier on the whole project |
 
-- `npm run dev`: Runs the app in development mode with Turbopack.
-- `npm run build`: Builds the application for production.
-- `npm run start`: Starts a Next.js production server.
-- `npm run lint`: Runs ESLint to check for code quality and style issues.
-- `npm run typecheck`: Runs the TypeScript compiler to check for type errors.
-- `npm run format`: Formats all project files using Prettier.
+## Updating content
 
-## Learn More
+1. Edit the text in **both** `src/dictionaries/en.ts` and `src/dictionaries/pt.ts`.
+2. For a new project, add an item with a unique `id` to `projects.items`. Then optionally add its image to `public/img/` + `src/lib/images.json`, and its link to `projectLinks`.
+3. Run `npm run typecheck && npx next build` before pushing. Vercel deploys `main` automatically.
 
-To learn more about Next.js, take a look at the following resources:
+## Security
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+Dependencies are kept on patched Next.js releases (currently `15.5.26`, which fixes the React Server Components "React2Shell" advisory and later critical RCE advisories). Check with `npm audit` after upgrades.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+## License
+
+Personal content (texts, photos, project descriptions) © Welliton Slaviero. All rights reserved.
