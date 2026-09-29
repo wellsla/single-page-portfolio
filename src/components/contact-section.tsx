@@ -59,7 +59,7 @@ export function ContactSection({ dictionary }: ContactSectionProps) {
                 <Github className="h-8 w-8 md:h-10 md:w-10" />
               </Link>
               <Link
-                href="https://www.linkedin.com/in/welliton-slaviero-61aa86243/"
+                href="https://www.linkedin.com/in/welliton-slaviero/"
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label="LinkedIn"

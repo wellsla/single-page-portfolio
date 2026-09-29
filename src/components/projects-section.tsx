@@ -7,7 +7,7 @@ import { Card, CardContent, CardHeader, CardTitle, CardDescription } from '@/com
 import { Badge } from '@/components/ui/badge';
 import { Button } from '@/components/ui/button';
 import { Tooltip, TooltipContent, TooltipProvider, TooltipTrigger } from '@/components/ui/tooltip';
-import { ExternalLink, Lock } from 'lucide-react';
+import { Bot, ExternalLink, LayoutDashboard, Lock, type LucideIcon } from 'lucide-react';
 import currentData from '@/lib/images.json';
 import { motion } from 'framer-motion';
 
@@ -22,6 +22,14 @@ const allPlaceholders: ImagePlaceholder[] = currentData.placeholderImages;
 
 // Project links mapping
 const projectLinks: Record<string, { url?: string; isPrivate: boolean }> = {
+  'agent-skills': {
+    url: 'https://github.com/wellsla/well-agent-skills',
+    isPrivate: false,
+  },
+  'pipe-crm': {
+    url: 'https://github.com/wellsla/pipe-crm',
+    isPrivate: false,
+  },
   'customer-service-manager': {
     url: 'https://play.google.com/store/apps/details?id=com.soluct.appgestoratendimentos&hl=en',
     isPrivate: false,
@@ -46,13 +54,19 @@ const projectLinks: Record<string, { url?: string; isPrivate: boolean }> = {
   },
 };
 
+// Cover icons for projects without a screenshot
+const projectIcons: Record<string, LucideIcon> = {
+  'agent-skills': Bot,
+  'pipe-crm': LayoutDashboard,
+};
+
 type ProjectsSectionProps = {
   dictionary: Dictionary['projects'];
 };
 
 export function ProjectsSection({ dictionary }: ProjectsSectionProps) {
   const getPlaceholder = (id: string) => {
-    return allPlaceholders.find((p) => p.id === id) || allPlaceholders[0];
+    return allPlaceholders.find((p) => p.id === id);
   };
 
   const containerVariants = {
@@ -101,10 +115,16 @@ export function ProjectsSection({ dictionary }: ProjectsSectionProps) {
           >
             {dictionary.items.map((project) => {
               const placeholder = getPlaceholder(project.id);
+              const CoverIcon = projectIcons[project.id] ?? LayoutDashboard;
               return (
                 <motion.div key={project.id} variants={itemVariants} className="relative">
                   <Card className="project-card flex h-full flex-col overflow-hidden relative">
                     <div className="relative aspect-[16/10] w-full overflow-hidden bg-muted">
+                      {!placeholder ? (
+                        <div className="flex h-full w-full items-center justify-center bg-gradient-to-br from-primary/20 via-muted to-accent/20">
+                          <CoverIcon className="h-16 w-16 text-primary" aria-hidden="true" />
+                        </div>
+                      ) : (
                       <Image
                         src={placeholder.imageUrl}
                         alt={project.title}
@@ -115,6 +135,7 @@ export function ProjectsSection({ dictionary }: ProjectsSectionProps) {
                         placeholder="blur"
                         blurDataURL="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAYEBQYFBAYGBQYHBwYIChAKCgkJChQODwwQFxQYGBcUFhYaHSUfGhsjHBYWICwgIyYnKSopGR8tMC0oMCUoKSj/2wBDAQcHBwoIChMKChMoGhYaKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCj/wAARCAABAAEDASIAAhEBAxEB/8QAFQABAQAAAAAAAAAAAAAAAAAAAAv/xAAhEAACAQMDBQAAAAAAAAAAAAABAgMABAUGIWGRkqGx0f/EABUBAQEAAAAAAAAAAAAAAAAAAAMF/8QAGhEAAgIDAAAAAAAAAAAAAAAAAAECEgMRkf/aAAwDAQACEQMRAD8AltJagyeH0AthI5xdrLcNM91BF5pX2HaH9bcfaSXWGaRmknyJckliyjqTzSlT54b6bk+h0R//2Q=="
                       />
+                      )}
                     </div>
                     <CardHeader>
                       <CardTitle className="font-headline text-xl">{project.title}</CardTitle>

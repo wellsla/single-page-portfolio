@@ -2,8 +2,9 @@ import type { Metadata } from 'next';
 import './globals.css';
 
 export const metadata: Metadata = {
-  title: 'Welliton Slaviero | Fullstack Developer (Vue.js, React.js, Next.js, TypeScript, Laravel, PostgreSQL)',
-  description: 'Fullstack Developer specialized in Vue.js, React, Next.js, and TypeScript. Experienced with Design Systems (Storybook), Vuetify/PrimeVue, Laravel/PHP, PostgreSQL, and real-time apps with WebSockets. Focused on performance, clean code, and business impact.',
+  title: 'Welliton Slaviero | Full Stack Software Engineer (TypeScript, Vue 3, React, Laravel, AI Agents)',
+  description:
+    'Full Stack Software Engineer with 6+ years building B2B SaaS end to end: Vue 3 and React front ends in TypeScript, Laravel APIs, PostgreSQL, real-time features and design systems, engineering with AI agents (spec-driven development, custom agent skills, MCP).',
 };
 
 export default function RootLayout({
